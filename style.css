@@ -13,7 +13,6 @@ body{
 
 nav {
     /*margin: 50px;*/
-
 }
 
 ul {
@@ -69,8 +68,16 @@ img {
 }
 
 .navigation{
-    
-    background-color: rgb(100, 2, 90);
+    min-width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.614),
+        rgba(0, 0, 255, 0.733)
+    );
 }
 
 /*
