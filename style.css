@@ -11,8 +11,8 @@ body{
     align-items: center;
 }
 
-nav {
-    /*margin: 50px;*/
+h4, p{
+    color: white;
 }
 
 ul {
@@ -69,7 +69,7 @@ img {
 
 .navigation{
     min-width: 100vw;
-    padding: 10px;
+    padding: 20px 0px 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,14 +80,11 @@ img {
     );
 }
 
-/*
-.container:hover{
-    filter: grayscale(1);
-    border-style: none;
-    border-radius: 100%;
-    transition: background-size 0.3s ease;
-    filter: grayscale(1);
-    transition: background-size 0.3s ease; 
-
+.icons{
+    margin: 0;
+    padding: 0;
 }
-*/
+
+.icons:hover{
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
