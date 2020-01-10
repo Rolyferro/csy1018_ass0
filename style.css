@@ -1,84 +1,93 @@
-* {
+* { /*removes all the margins and padding around the web site*/
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(79, 7, 27);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body{ 
+    background-color: rgb(79, 7, 27); /*sets the background for the website*/
+    min-height: 100vh; /*sets the height of the screen to a vecor hight*/
+    display: flex; 
+    flex-direction: column; /*makes the flex into a column*/
+    align-items: center; /*centers all the content of the website*/
 }
 
-h4, p{
-    color: white;
+h4, p, h1{
+    color: white; /*makes the text all white*/
+    font-family: 'Open Sans', sans-serif; /*setting the the font to open sans a google webfont which is linked in the HTML*/
 }
 
 ul {
-overflow: auto;
+overflow: auto; 
 list-style-type: none;
 }
 
 li {
 height: 25px;
-float: left;
-margin-right: 0px;
-border-right: 1px solid 
+float: left; /*makes the text go from left to right*/
+margin-right: 0px; /*removes margin to the right*/
+border-right: 1px solid /*making a border to the right of 1px length which is sold color of a color of white (#aaa)*/
 #aaa;
-padding: 0 20px;
-text-align: center;
+padding: 0 20px; /*making a padding of 20px to the left and right*/
 
 }
 
 li:last-child {
-border-right: none;
+border-right: none; /*the last item in the nav hasnt got a border to the right cus its at the end*/
 }
 
 li a {
-text-decoration: none;
-color: #ccc;
-font: 24px/1 Helvetica, Verdana, sans-serif;
-text-transform: lowercase;
-transition: all 0.5s ease;
+text-decoration: none; /*removes the underline on the navigation*/
+color: #ccc; /*sets the text color to a whitish color (#ccc)*/
+font: 24px/1 Helvetica, Verdana, sans-serif; /*sets the font to 24px is font helvetica however as a back up verdana*/
+text-transform: lowercase; /*makes the case lowercase*/
+transition: all 0.5s ease; /*makes the nave come on slowly*/
 }
 
 li a:hover {
-color: #666;
+color: #666; /*changes the color of the text to a darker color when hovered over*/
 }
 
 li.active a {
-font-weight: bold;
-color: #333;
+font-weight: bold; /*makes the active nav button bold*/
+color: #333; /*sets the active button to a darker color different thought to the hover*/
 }
 
 
 img {
-    border-style: none;
-    border-radius: 100%;
-    filter: grayscale(0);
-    margin: 50px;
+    border-style: none; /*removes any styling on the img border*/
+    border-radius: 100%; /*turns the image into a circle*/
+    filter: grayscale(0.5); /*makes the image slightly grayer*/
+    margin: 50px; /*gives the image a margin so it's not glued to the text or nav*/
 }
 
 .navigation{
-    min-width: 100vw;
-    padding: 20px 0px 20px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(
+    min-width: 100vw; /*selects the whole page along width*/
+    padding: 20px 0px 20px 0px; /*gives padding on the top and bottom of the nav*/
+    display: flex; /*makes the display flex*/
+    flex-direction: column; /*makes the flex direction into a column layout*/
+    align-items: center; /*aligns the nav into the center */
+    background-image: linear-gradient( /*makes the background into a gradually changing color from red to blue*/
         90deg,
         rgba(255, 0, 0, 0.614),
         rgba(0, 0, 255, 0.733)
     );
 }
 
-.icons{
-    margin: 0;
+.icons{ 
+    margin: 0; /*removes the margin and padding on the icon*/
     padding: 0;
+    font-size: 100px; /*increases the size of the icon*/
 }
 
 .icons:hover{
-    /*filter: drop-shadow(0 0 0.75rem crimson);*/
-    filter: invert(1);
+    /*filter: invert(1);*/
+    filter: drop-shadow(0 0 0.75rem crimson); /*when hovering over the icon makes a crimson glow behind it*/
+}
+
+.article{
+    min-width: 95vw; /*selects the whole page along width*/
+    display: flex; /*makes the display flex*/
+    flex-direction: column; /*makes the flex direction into a column layout*/
+    align-items: center; /*aligns the nav into the center */
+    background-color: black;
 }
